@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const route = useRouter();
   const handleNewProduct = () => {
-    route.push("/create");
+    route.push("/products/create");
   }
   return (
     <div className="container mx-auto p-4">
