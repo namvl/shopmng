@@ -16,8 +16,8 @@ const columns: ColumnDef<Product>[] = [
     id: 'actions',
     cell: ({ row }) => (
       <div className="space-x-2">
-        <Link href={`/${row.original.id}`}>View</Link>
-        <Link href={`/edit/${row.original.id}`}>Edit</Link>
+        <Link href={`/products/${row.original.id}`}>View</Link>
+        <Link href={`/products/edit/${row.original.id}`}>Edit</Link>
       </div>
     ),
   },
