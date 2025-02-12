@@ -49,7 +49,7 @@ export const ProductForm = ({ defaultValues, onSubmit }: ProductFormProps) => {
       <div>
         <Label>SKU</Label>
         <Input {...register('sku')} />
-        {errors.name && <span className="text-red-500">{errors.name.message}</span>}
+        {errors.sku && <span className="text-red-500">{errors.sku.message}</span>}
       </div>
 
       {/* Description Field */}
@@ -63,7 +63,7 @@ export const ProductForm = ({ defaultValues, onSubmit }: ProductFormProps) => {
       <div>
         <Label>Stock</Label>
         <Input type="number" {...register('stock', { valueAsNumber: true })} />
-        {errors.price && <span className="text-red-500">{errors.price.message}</span>}
+        {errors.stock && <span className="text-red-500">{errors.stock.message}</span>}
       </div>
 
       {/* Price Field */}
